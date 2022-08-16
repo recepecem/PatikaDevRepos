@@ -18,3 +18,11 @@ SELECT * FROM country C WHERE C.country LIKE 'A%a';
 SELECT * FROM country C WHERE C.country LIKE '____%n';
 SELECT * FROM film F WHERE F.title ILIKE '%t%_';
 SELECT * FROM film F WHERE (F.title LIKE 'C%') AND (F.length > 90) AND (F.rental_rate = 2.99);
+
+--ÖDEV 4
+
+SELECT DISTINCT replacement_cost FROM film;
+SELECT COUNT(DISTINCT replacement_cost) FROM film;
+SELECT COUNT(*) FROM film F WHERE F.title LIKE 'T%' AND F.rating = 'G';
+SELECT COUNT(*) FROM country C WHERE C.country LIKE '_____';
+SELECT COUNT(*) FROM city C WHERE C.city ILIKE '%r';
